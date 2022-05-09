@@ -15,10 +15,10 @@ if __name__ == "__main__":
 
         t1 = cv2.getTickCount()
         #转换为灰度
-        gray = cv2.cvtColoer(img,cv2.COLOR_BGR2GRAY)
+        gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
         #进行人脸检测
-        faces = faceCascade.detectMultiScale(gray,scaleFactor=1.1,minNeighbors=5,minSize=(50,50),flags=cv2.CASCADE_SCALE_IMAKE)
+        faces = faceCascade.detectMultiScale(gray,scaleFactor=1.1,minNeighbors=5,minSize=(50,50),flags=cv2.CASCADE_SCALE_IMAGE)
 
         #画框
         for (x,y,w,h) in faces:
