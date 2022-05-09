@@ -3,7 +3,7 @@ import cv2
 if __name__ == "__main__":
 
     #加载训练好的人脸检测器
-    faceCascade = cv2.CascadeClassifier('')
+    faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 
     #打开摄像头
     cap = cv2.VideoCapture(0)
